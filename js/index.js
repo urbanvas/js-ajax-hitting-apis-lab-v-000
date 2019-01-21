@@ -10,7 +10,7 @@ function showRepositories() {
   console.log(repo[2]['name'])
   let repoList = `<ul>`
   for (const item of repo ) {
-    console.log(item)
+    console.log(item["name"])
   }
 }
 
