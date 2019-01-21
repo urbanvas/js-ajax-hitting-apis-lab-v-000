@@ -8,7 +8,7 @@ function getRepositories() {
 function showRepositories() {
   console.log(this)
   let repoList = `<ul>`
-  for (const item of )
+  // for (const item of )
 }
 
 getRepositories()
