@@ -9,7 +9,9 @@ function showRepositories() {
   const repo = JSON.parse(this.responseText)
   console.log(repo[2]['name'])
   let repoList = `<ul>`
-  // for (const item of )
+  for (const item of repos ) {
+    console.log(item)
+  }
 }
 
 getRepositories()
