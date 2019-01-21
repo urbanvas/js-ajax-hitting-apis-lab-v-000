@@ -7,7 +7,7 @@ function getRepositories() {
 
 function showRepositories() {
   const repos = JSON.parse(this.responseText)
-  console.log(repos[0][1])
+  console.log(repos[0]["id"])
   const repoList = `<ul>${repos
     .map(r => '<li>' + r.name + '</li>')
     .join('')}</ul>`
