@@ -11,7 +11,7 @@ function showRepositories() {
   const repoList = `<ul>${repos
     .map(r => '<li>' + r.name + '</li>')
     .join('')}</ul>`
-  console.log(repoList)
+  document.getElementById('repositories').innerHTML = repoList
 }
 
 getRepositories()
