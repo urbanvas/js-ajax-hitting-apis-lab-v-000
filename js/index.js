@@ -6,5 +6,5 @@ function getRepositories() {
 }
 
 function showRepositories() {
-  
+  console.log(this.responseText)
 }
