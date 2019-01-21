@@ -9,7 +9,7 @@ function showRepositories() {
   const repos = JSON.parse(this.responseText)
   console.log(repos[0]["html_url"])
   const repoList = `<ul>${repos
-    .map(r => '<li>' + r.name + '</li>')
+    .map(r => '<li>' + r.name + '<a href=' + r.html_url + '>' + '</li>')
     .join('')}</ul>`
   document.getElementById('repositories').innerHTML = repoList
 }
