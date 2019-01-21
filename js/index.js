@@ -6,12 +6,11 @@ function getRepositories() {
 }
 
 function showRepositories() {
-  const repo = JSON.parse(this.responseText)
-  console.log(repo[2]['name'])
-  let repoList = `<ul>`
-  for (const item of repo ) {
-    console.log(item["name"])
-  }
+  const repos = JSON.parse(this.responseText)
+  console.log(repos[2]['name'])
+  const repoList = `<ul>${repos.map(r => {
+    `<li>${r.name}</li>`
+  }).join("")}</ul>`
 }
 
 getRepositories()
