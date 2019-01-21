@@ -10,7 +10,7 @@ function showRepositories() {
   console.log(repos[2]['name'])
   const repoList = `<ul>${repos.map(r => {`<li>${r.name}</li>`}).join('')}</ul>`
   console.log(repos[1]['name'])
-  console.log(repos.map(r => {console.log(r.name)}))
+  console.log(repos.map(r => {console.log(`<li>${r.name}</li>`)}))
 }
 
 getRepositories()
